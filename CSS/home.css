@@ -1,0 +1,71 @@
+
+.container {
+    display: grid;
+    height: auto;
+    grid-row: auto auto auto auto auto;
+    grid-template-areas: 
+    'hd'
+    'mn'
+    'toby'
+    'under'
+    'ft'
+}
+
+header {
+    grid-area: hd;
+    display: flex;
+    display: column;
+}
+#home-nav {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: blue;
+    height: 80px;
+    width: 100%;
+    align-items:baseline;
+}
+
+
+
+.logo {
+    margin: auto 0;
+    padding: 20px;
+
+}
+
+#teleport-button{
+ margin:auto;
+ padding: 20px;
+ align-items: center;
+ position: relative;
+}
+
+#search-box{
+    margin: auto 0;
+    padding: 20px;
+}
+
+#explore-button{
+    height: 400px;
+}
+
+#news-info{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    text-align: center;
+}
+.news-container{
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.news-box{
+
+}

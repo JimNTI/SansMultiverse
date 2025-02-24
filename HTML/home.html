@@ -7,16 +7,15 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/home.css">
 </head>
-<body>
+<body class="container"> <!-- Style black purple style or white blue-->
     <header>
         <!-- Phone navbar including logo "teleport" button and search icon-->
-         <!-- Desktop navbar including logo, 5 links (categories opening a folder of other links) and a search bar-->
+        <!-- Desktop navbar including logo, 5 links (categories opening a folder of other links) and a search bar-->
     <nav id="home-nav">
-        <div class="logo">Logo</div>
-        <div id="teleport-button">Teleport</div>
+        <div class="logo"><img src="/misc/logo.png" alt="logo"></div>
+        <div id="teleport-button">Teleport</div> <!--button made in photoshop-->
         <!-- search icon that opens searchbar (eventually included "search results") + darkended background, search icon is made in photoshop-->
-        <div id="search-box"></div>
-     
+        <div id="search-box"><img src="/misc/search-button.png" alt="search"></div>
     </nav>
 
     <!-- Desktop hero image and title done with photoshop-->
@@ -30,49 +29,59 @@
         <!-- Phone news includes 6 buttons that are links with subject and date beneath and added "see all" button right to title -->
         <!-- Desktop includes 3 button with interactive (clicked) horizontal scroll-->
         <section id="news-info">
-            <h2 class="centered-title"></h2> <!-- centered title "UnderNews"-->
-            <p class="see-all"></p>
+            <div class="row">
+            <h2 class="centered-title">UnderNews</h2> <!-- centered title "UnderNews"-->
+            <p class="see-all">see all</p>
+            </div>
+            <div class="news-container">
                 <div class="row">
-                <div class="news-box"></div> <!-- MAYBE added glow when interacted-->
-                <div class="news-box"></div>
-                <div class="news-box"></div>
+                <div class="news-box">Nil</div> <!-- MAYBE added glow when interacted-->
+                <div class="news-box">Nil</div>
+                <div class="news-box">Nil</div>
                 </div>
                 <div class="row">
-                <div class="news-box"></div>
-                <div class="news-box"></div>
-                <div class="news-box"></div>
+                <div class="news-box">Nil</div>
+                <div class="news-box">Nil</div>
+                <div class="news-box">Nil</div>
+            </div>
                 </div>
         </section>
     </main>
+
     <!--Aside including top 10 "Most liked sanses" >> title above with horizontal scroll beneath, boxes include clickable image with text under, example text: ("1. Classic Sans")-->
     <aside id="top-10">
-        <h2 class="centered-title"></h2> <!-- centered title "Top 10 (weekly)"-->
+        <h2 class="centered-title">Top 10 (weekly)</h2> <!-- centered title "Top 10 (weekly)"-->
         <div class="top-10-box"><p>1. Classic Sans  </p></div>
         <div class="top-10-box"><p>2. Fell Sans     </p></div>
         <div class="top-10-box"><p>3. Blueberry Sans</p></div>
     </aside>
     
-    <!--Aside including categories ""-->
+    <!--Aside including categories (photoshopped)-->
     <aside id="categories">
         <div class="category-box"></div>
         <div class="category-box"></div>
         <div class="category-box"></div>
         <div class="category-box"></div>
     </aside>
+
+    <!--Phone article about tobyfox (img of him above and text under)-->
+    <!--Desktop img to the left and text to the right-->
     <article id="tobyfox">
         <img>
-        <p></p>
+        <p>blah blah blah blah blah blahblah blah blah blah blah blah</p>
     </article>
+
+    <!--Article includes undertale game img and text under-->
     <article id="undertale">
         <img>
-        <p></p>
+        <p>blah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blahblah blah blah blah blah blah</p>
     </article>
 
     <!--phone footer includes one icon on top and links beneath-->
     <!--desktop footer includes one icon to the left and links  to the right-->
     <footer>
-        <logo>
-        </logo>
+        <div class="logo"><img src="/misc/logo.png" alt="logo">
+        </div>
         <div id="footer-links">
         <ul>
             <li></li>
