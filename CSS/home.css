@@ -46,9 +46,15 @@ header {
     margin: auto 0;
     padding: 20px;
 }
-
+#explore-container{
+    display:flex;
+    height:500px;
+}
 #explore-button{
-    height: 400px;
+    background-color: white;
+    padding: 100px 200px;
+    margin:auto;
+    border-radius: 25px;
 }
 
 #news-info{
@@ -63,9 +69,12 @@ header {
 .row{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .news-box{
+    padding:50px;
+    margin: 10px;
+    background-color: wheat;
 
 }
