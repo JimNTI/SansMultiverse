@@ -21,7 +21,7 @@ header {
     flex-direction:row;
     justify-content: space-evenly;
     position: fixed;
-    background-color: blue;
+    background-color: rgb(66, 66, 69);
     height: 80px;
     width: 100%;
     align-items:baseline;
@@ -47,21 +47,35 @@ header {
     padding: 20px;
 }
 #explore-container{
+    margin-top: 80px;
     display:flex;
     height:500px;
+    align-items: center;
+    justify-content: center;
 }
 #explore-button{
+    display:flex;
+    flex-direction: column;
     background-color: white;
-    padding: 100px 200px;
-    margin:auto;
+    width: 90vw;
+    height: 100%;
+    margin: 5px;
     border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+#explore-button h2 {
+    font-size: 50px;
 }
 
 #news-info{
+    margin: 20px 0;
     display: flex;
     flex-direction: column;
-    margin:auto;
     text-align: center;
+    background-color: black;
 }
 .news-container{
     flex-direction: column;
@@ -76,5 +90,58 @@ header {
     padding:50px;
     margin: 10px;
     background-color: wheat;
+}
+
+#top-10{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+}
+
+#tobyfox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+#undertale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background: rgb(66, 66, 69);
+    height: 500px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+}
+footer .logo img{
+  
+}
+#footer-links{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70%;
+    justify-content: space-around;
+
+}
+
+#footer-links ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
 }
