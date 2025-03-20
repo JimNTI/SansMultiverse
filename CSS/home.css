@@ -19,33 +19,47 @@ header {
 #home-nav {
     display: flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: fixed;
     background-color: rgb(66, 66, 69);
     height: 80px;
     width: 100%;
-    align-items:baseline;
+    align-items:center;
 }
 
 
 
 .logo {
-    margin: auto 0;
-    padding: 20px;
-
+    margin: 0px 20px;
 }
 
+
+#teleport-container{
+    display:flex;
+    margin:auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
 #teleport-button{
- margin:auto;
- padding: 20px;
- align-items: center;
- position: relative;
+ background-color: orange;
+ justify-content: center;
+}
+#teleport-button:hover{
+    background-color: yellow;
 }
 
-#search-box{
-    margin: auto 0;
-    padding: 20px;
+#search-container{
+    display: flex;
+    justify-content: center;
+    width: 83px;
+    margin: 0px 20px;
 }
+#search-box{
+    justify-content: center;
+    display: flex;
+}
+
 #hero{
     margin-top: 80px;
     display:flex;
@@ -181,6 +195,7 @@ footer{
 }
 
 footer .logo {
+    margin: 20px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
