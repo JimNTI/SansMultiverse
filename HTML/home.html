@@ -14,6 +14,13 @@
     <nav id="home-nav">
         <div class="logo"><img src="/misc/logo.png" alt="logo"></div>
         <div id="teleport-container"><div id="teleport-button"><img src="/misc/teleport.png" alt="teleport"></div></div> <!--button made in photoshop-->
+        <ul id="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="new-popular">New & Popular</a></li>
+            <li><div class=categories-folder>Categories</div></li>
+            <li><a href="store.html">Store</a></li>
+            <li><a href="people">People</a></li>
+        </ul>
         <!-- search icon that opens searchbar (eventually included "search results") + darkended background, search icon is made in photoshop-->
         <div id="search-container"><div id="search-box"><img src="/misc/search-button.png" alt="search"></div></div>
     </nav>
@@ -29,22 +36,25 @@
         <!-- Phone news includes 6 buttons that are links with subject and date beneath and added "see all" button right to title -->
         <!-- Desktop includes 3 button with interactive (clicked) horizontal scroll-->
         <section id="news-info">
-            <div class="row">
             <h2 class="centered-title">UnderNews</h2> <!-- centered title "UnderNews"-->
-
+            <div id="news-container">
+                <div id="news-mobile"> <!--Hidden container when desktop screen-->
+                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
             </div>
-            <div class="news-container">
-                <div class="news-box-container">
-                <div class="row">
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div> <!-- MAYBE added glow when interacted-->
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                </div>
-                <div class="row">
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                </div>
+                <div id="news-desktop">
+                    <div class="row">
+                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    </div>
+                    <div class="row">
+                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -75,12 +85,16 @@
     <!--Phone article about tobyfox (img of him above and text under)-->
     <!--Desktop img to the left and text to the right-->
     <article id="tobyfox">
+        <div class="Linked-together">
         <img src="/misc/TobyFox.png" alt="TobyFox"><h2>TOBY FOX</h2>
+        </div>
         <div class="text-container">
+
 
         <p>Toby Fox is the creator of Undertale, an indie RPG that became a massive cultural phenomenon. He developed the game almost entirely by himself, handling programming, writing, and composing its iconic soundtrack. Released in 2015, Undertale stood out for its unique combat system, where players could choose non-violent solutions, and its deeply emotional storytelling that changes based on player choices.
 
-            His impact on the Undertale community is huge. The game inspired countless... </p>
+            His impact on the Undertale community is huge. The game inspired countless... 
+        </p>
             </div>
         </article>
 
@@ -89,6 +103,9 @@
         <img src="/misc/UnderTale.png" alt="Undertale Image">
         <h2>UNDERTALE</h2>
         <div class="text-container"><p>Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
+
+            The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.
+            Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
 
             The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.</p>
     </article>
@@ -100,19 +117,19 @@
         </div>
         <div id="footer-links">
         <ul>
-            <li>yp</li>
-            <li>no</li>
-            <li></li>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
         </ul>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Link 4</li>
+            <li>Link 5</li>
+            <li>Link 6</li>
         </ul>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Link 7</li>
+            <li>Link 8</li>
+            <li>Link 9</li>
         </ul>
         </div>
     </footer>
