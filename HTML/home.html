@@ -7,19 +7,29 @@
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/home.css">
 </head>
+<audio id="blipblip"><source src="/misc/clicksound.mp3" type="audio/mpeg"></audio>
 <body class="container"> <!-- Style black purple style or white blue-->
     <header>
         <!-- Phone navbar including logo "teleport" button and search icon-->
         <!-- Desktop navbar including logo, 5 links (categories opening a folder of other links) and a search bar-->
     <nav id="home-nav">
         <div class="logo"><img src="/misc/logo.png" alt="logo"></div>
-        <div id="teleport-container"><div id="teleport-button"><img src="/misc/teleport.png" alt="teleport"></div></div> <!--button made in photoshop-->
+        <div id="teleport-container"><div class="teleport-button"><img src="/misc/teleport.png" alt="teleport.png"></div><div class="teleportMenu"><div class="teleport-buttons"></div></div>
+ 
+    </div> <!--button made in photoshop-->
         <ul id="nav-links">
             <li><a href="home.html">Home</a></li>
             <li><a href="new-popular">New & Popular</a></li>
-            <li><div class=categories-folder>Categories</div></li>
+            <li><div class=categories-button>Categories</div>    
+                <div class="categoriesMenu">
+                <div class="categories-box"><a href="games.html">Games</a></div>
+                <div class="categories-box"><a href="music.html">Music</a></div>
+                <div class="categories-box"><a href="people.html">People</a></div>
+                <div class="categories-box"><a href="puns.html">Puns</a></div>
+                </div>
+            </li>
             <li><a href="store.html">Store</a></li>
-            <li><a href="people">People</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <!-- search icon that opens searchbar (eventually included "search results") + darkended background, search icon is made in photoshop-->
         <div id="search-container"><div id="search-box"><img src="/misc/search-button.png" alt="search"></div></div>
@@ -29,31 +39,31 @@
 
     </header>
 
-    <main>
-        <!-- Big button when hovered gives off an animation and clicked moves you to #explore, button made in photoshop -->
-        <section id="hero"><h1>Sans Multiverse</h1><a id="explore-button" href="explore.html"><h3>Explore Now</h3></a></section>
 
+        <!-- Big button when hovered gives off an animation and clicked moves you to #explore, button made in photoshop -->
+        <section id="hero"><h1>Sans Multiverse</h1><p>Explore Sans Multiverse, go shopping, listen to music, play your favorite Undertale games and find your inner Sans</p><a id="explore-button" href="explore.html"><h3>Explore Now</h3></a></section>
+        <main>
         <!-- Phone news includes 6 buttons that are links with subject and date beneath and added "see all" button right to title -->
         <!-- Desktop includes 3 button with interactive (clicked) horizontal scroll-->
         <section id="news-info">
             <h2 class="centered-title">UnderNews</h2> <!-- centered title "UnderNews"-->
             <div id="news-container">
                 <div id="news-mobile"> <!--Hidden container when desktop screen-->
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div></a>
+                <div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                <div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                <div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
             </div>
                 <div id="news-desktop">
                     <div class="row">
-                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
                     </div>
                     <div class="row">
-                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
-                    <div class="news-box"><img src="/Sans/Blueberry.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div></a>
+                    <div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
+                    <div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><h4>Latest Release: Blueberry</h4></div>
                     </div>
                 </div>
             </div>
@@ -64,8 +74,8 @@
     <aside id="top-10">
         <h2 class="centered-title">Top 10 (weekly)</h2> <!-- centered title "Top 10 (weekly)"-->
         <div class="row">
-        <div class="top-10-box"><img src="/misc/ClassicSans.png" alt="Classic Sans"><p>1. Classic Sans  </p></div>
-        <div class="top-10-box"><img src="/misc/FellSans.png" alt="Fell Sans"><p>2. Fell Sans     </p></div>
+        <div class="top-10-box"><img src="/misc/BlueberrySans.png" alt="Classic Sans"><p>1. Classic Sans  </p></div>
+        <div class="top-10-box"><img src="/misc/BlueberrySans.png" alt="Fell Sans"><p>2. Fell Sans     </p></div>
         <div class="top-10-box"><img src="/misc/BlueberrySans.png" alt="Blueberry Sans"><p>3. Blueberry Sans</p></div>
         </div>
     </aside>
@@ -73,12 +83,16 @@
     <!--Aside including categories (photoshopped)-->
     <aside id="categories">
         <div class="row">
-        <div class="category-box"><img src="/misc/Games.png" alt="Games"></div>
-        <div class="category-box"><img src="/misc/Music.png" alt="Music"></div>
+        <a href="games.html">
+        <div class="category-box"><img src="/misc/Games.png" alt="Games"><h3>Games</h3></div></a>
+        <a href="music.html">
+        <div class="category-box"><img src="/misc/Music.png" alt="Music"><h3>Music</h3></div></a>
         </div>
         <div class="row">
-        <div class="category-box"><img src="/misc/People.png" alt="People"></div>
-        <div class="category-box"><img src="/misc/Puns.png" alt="Puns"></div>
+        <a href="people.html">
+        <div class="category-box"><img src="/misc/People.png" alt="People"><h3>People</h3></div></a>
+        <a href="puns.html">
+        <div class="category-box"><img src="/misc/Puns.png" alt="Puns"><h3>Puns</h3></div></a>
         </div>
     </aside>
 
@@ -101,7 +115,6 @@
     <!--Article includes undertale game img and text under-->
     <article id="undertale">
         <img src="/misc/UnderTale.png" alt="Undertale Image">
-        <h2>UNDERTALE</h2>
         <div class="text-container"><p>Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
 
             The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.
@@ -133,6 +146,7 @@
         </ul>
         </div>
     </footer>
-    
+
+    <script src="/JS/script.js"></script>
 </body>
 </html>
