@@ -61,8 +61,8 @@ header {
     animation-iteration-count: 5;
 }
 .teleportMenu{
+    visibility: none;
     opacity: 0;
-    display:flex;
     width: 90vw;
     height: 30vh;
     background-color: rgb(0, 0, 0);
@@ -71,6 +71,24 @@ header {
     transition: 0.5s;
     z-index: 0;
     outline: solid 2px white;
+    color: white;
+    flex-direction: row;
+}
+.teleportMenu .column{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin-left: 5%;
+}
+
+.teleportMenu a{
+    padding: 5px;
+    align-items: center;
+    font-family: 'Undertale';
+}
+.teleportMenu a:hover{
+    color: orange;
 }
 .teleportMenu.visible{
     opacity: 1;
@@ -78,6 +96,7 @@ header {
     transition: 0.5s;
     transform: translateY(20vh);
 }
+
 #nav-links{
     display:none;
 }
@@ -312,7 +331,6 @@ footer .logo img{
   
 }
 #footer-links{
-    padding-top: 40px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -324,6 +342,7 @@ footer .logo img{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content: center;
 }
 
 li{
@@ -434,5 +453,13 @@ li{
     }
     #undertale img{
         width: 60vw;
+    }
+    footer{
+        flex-direction: row;
+        height: 20vw;
+        align-items: center;
+    }
+    footer .logo{
+        margin-left: 5vw;
     }
 }
