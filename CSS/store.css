@@ -16,7 +16,7 @@ main{
     justify-content: center;
     grid-area: mn;
     margin-top: 80px;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 h1{
@@ -31,11 +31,16 @@ footer{
     flex-wrap:wrap;
     flex-direction: row;
     justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 .item-box{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;
     background-color: black;
     color: white;
-    margin: 1vw;
+    width: 45vw;
 }
 .item-box img{
     width: 45vw;
@@ -45,9 +50,23 @@ footer{
 .item-name{
     font-size: 1.4rem;
     flex-wrap: wrap;
-    width: 45vw;
+    margin: 1px;
+    overflow: hidden;
 }
 .item-price{
     font-size: 1.2rem;
     flex-wrap:wrap;
+}
+
+@media screen and (min-width: 600px){
+.item-box{
+    width: 20vw;
+    align-items: center;
+    justify-content: center;
+}
+.item-box img{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 10px;
+}
 }

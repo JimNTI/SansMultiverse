@@ -13,7 +13,7 @@ function teleport(){
     let clickAnimation = document.querySelector(".teleport-button")
     clickAnimation.classList.toggle("lighten");
     let activateSound = document.querySelector("#blipblip")
-    activateSound.volume = 0.1;
+    activateSound.volume = 1;
     activateSound.play();
     }
 
