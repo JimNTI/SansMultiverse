@@ -1,14 +1,8 @@
-@font-face {
-    font-family: 'Undertale';
-    src: url('/misc/UndertaleFont/PixelOperator8.ttf');
-}
-@keyframes blinking-effect {
-    from {background-color:red;}
-    to {background-color: yellow;}
-}
+
 .container {
     display: grid;
     height: auto;
+
     grid-row: auto auto auto auto auto;
     grid-template-areas: 
     'hd'
@@ -20,96 +14,8 @@
 .container.fade {
     opacity: 0;
 }
-header {
+header{
     grid-area: hd;
-    display: flex;
-    display: column;
-}
-#home-nav {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    position: fixed;
-    background-color: rgb(66, 66, 69);
-    height: 80px;
-    width: 100%;
-    align-items:center;
-    z-index: 10;
-}
-.logo {
-    margin: 0px 20px;
-}
-#teleport-container{
-    display:flex;
-    margin:auto;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-.teleport-button{
- background-color: orange;
- justify-content: center;
- z-index: 10;
-}
-.teleport-button:hover{
-    background-color: yellow;
-}
-.teleport-button.lighten{
-    background-color: orange;
-    animation-name: blinking-effect;
-    animation-duration: 0.2s;
-    animation-iteration-count: 5;
-}
-.teleportMenu{
-    visibility: none;
-    opacity: 0;
-    width: 90vw;
-    height: 30vh;
-    background-color: rgb(0, 0, 0);
-    position: absolute;
-    transform: translateY(0px);
-    transition: 0.5s;
-    z-index: 0;
-    outline: solid 2px white;
-    color: white;
-    flex-direction: row;
-}
-.teleportMenu .column{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    margin-left: 5%;
-}
-
-.teleportMenu a{
-    padding: 5px;
-    align-items: center;
-    font-family: 'Undertale';
-}
-.teleportMenu a:hover{
-    color: orange;
-}
-.teleportMenu.visible{
-    opacity: 1;
-    display: flex;
-    transition: 0.5s;
-    transform: translateY(20vh);
-}
-
-#nav-links{
-    display:none;
-}
-
-#search-container{
-    display: flex;
-    justify-content: center;
-    width: 83px;
-    margin: 0px 20px;
-}
-#search-box{
-    justify-content: center;
-    display: flex;
 }
 
 #hero{
@@ -121,6 +27,7 @@ header {
     background-color: rgb(0, 0, 0);
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 #hero h1{
     font-size: 4rem;
@@ -143,7 +50,6 @@ header {
     padding: 10px 20px;
     border-radius: 2px;
     text-decoration: none;
-    
 }
 
 #explore-button h3 {
@@ -157,7 +63,9 @@ header {
     transition: 0.5s;
 
 }
-
+main{
+    grid-area: mn;
+}
 #news-info{
     margin: 20px 0px;
     display: flex;
@@ -187,6 +95,7 @@ header {
 #news-desktop{
     display:none;
 }
+
 .row{
     display: flex;
     flex-direction: row;
@@ -277,6 +186,7 @@ header {
 
 #tobyfox{
     display: flex;
+    grid-area: toby;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -284,6 +194,7 @@ header {
     padding-top: 40px;
     font-family: 'Undertale';
 }
+
 #tobyfox img{
     padding-bottom: 20px;
 
@@ -303,6 +214,7 @@ p{
 }
 #undertale{
     display: flex;
+    grid-area: under;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -315,6 +227,7 @@ p{
 
 footer{
     display: flex;
+    grid-area: ft;
     flex-direction: column;
     background: rgb(66, 66, 69);
     height: 500px;
@@ -350,66 +263,7 @@ li{
 }
 
 @media screen and (min-width: 600px) {
-    .teleport-button{
-        display:none;
-    }
-    #nav-links{
-        display:flex;
-        justify-content: end;
-        font-size: 20px;
-        align-items: center;
-        width: 70%;
-    }
-    #nav-links{
-        height: 100%;
-    }
-    #nav-links a, .categories-button{
-        text-decoration: none;
-        color: white;
-        height: 100%;
-        padding: 30px;
-    }
-    #nav-links a:hover, .categories-button:hover, .categories-box{
-        box-shadow: inset 0 0 0 2px black;
-        transition: 0.5s;
-    }
-    .teleportMenu.visible{
-        display: none;
-    }
-    .categoriesMenu {
-        display: none;
-        color: white;
-        background-color: white;
-        position: absolute;
-        width: 145px;
-        height: 300px;
-        justify-content: space-around;
-    }
-    .categoriesMenu .categories-box {
-        display: flex;
-        height: 25%;
-        width: 145px;
-        justify-content: center;
-        align-items: center;
-    }
-        #home-nav .categories-box a {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        padding: 0px;
-        margin: 0px;
-        align-items: center;
-        justify-content: center;
-        color: rgb(255, 255, 255);
-        font-family: 'Undertale';
-        background-color: gray;
-        outline: solid black 2px;
-    }
-
-    .categoriesMenu.visible{
-        display: block;  
-        color: white;
-    }
+    
     .centered-title{
         font-size: 40px;
         padding: 20px 0px;

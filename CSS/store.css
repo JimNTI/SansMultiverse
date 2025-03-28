@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    height: auto;
+    grid-row: auto auto auto;
+    grid-template-areas:
+    'hd'
+    'mn'
+    'ft';
+}
+header{
+    grid-area: hd;
+}
+main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    grid-area: mn;
+    margin-top: 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+h1{
+    padding: 10px 0;
+    text-align: center;
+}
+footer{
+    grid-area: ft;
+}
+.store-menu{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.item-box{
+    background-color: black;
+    color: white;
+    margin: 1vw;
+}
+.item-box img{
+    width: 45vw;
+    height: 45vw;
+    font-family: 'Undertale';
+}
+.item-name{
+    font-size: 1.4rem;
+    flex-wrap: wrap;
+    width: 45vw;
+}
+.item-price{
+    font-size: 1.2rem;
+    flex-wrap:wrap;
+}
