@@ -32,13 +32,14 @@ header {
     flex-direction:row;
     justify-content: space-between;
     position: fixed;
-    background-color: rgb(66, 66, 69);
+    background-color: black;
+    background: linear-gradient( rgb(0, 0, 0, 1), rgba(8, 8, 172, 1),rgb(0, 0, 0, 1));
     height: 80px;
     width: 100%;
     align-items:center;
     z-index: 10;
 }
-.logo {
+.logo-nav {
     margin: 0px 20px;
 }
 #teleport-container{
@@ -114,6 +115,12 @@ header {
     justify-content: center;
     display: flex;
 }
+.centered-line {
+    width: 90%;
+    margin: 20px auto; 
+    border: none;
+    border-top: 3px solid #ccc; 
+}
 footer{
     display: flex;
     grid-area: ft;
@@ -122,16 +129,14 @@ footer{
     height: 500px;
 }
 
-footer .logo {
-    margin: 20px 0px;
+.logo-foot{
+    margin: 10% 0px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30%;
 }
-footer .logo img{
-  
-}
+
 #footer-links{
     display: flex;
     flex-direction: row;
@@ -150,7 +155,9 @@ footer .logo img{
 li{
     list-style: none;
 }
-
+h2{
+    text-align: center;
+}
 
 @media screen and (min-width: 600px){
     .teleport-button{
@@ -226,7 +233,7 @@ li{
         height: 20vw;
         align-items: center;
     }
-    footer .logo{
+    .logo-foot{
         margin-left: 5vw;
     }
 }

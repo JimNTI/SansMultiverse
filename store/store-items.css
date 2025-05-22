@@ -55,5 +55,16 @@ h1{
     font-weight: bold;
 }
 .keystone-info{
+ font-style: italic;
+ width: 70%;
+}
 
+@media screen and (min-width: 600px){
+main{
+    align-items: baseline;
+}
+.product{
+    width: 40vw;
+    padding-left: 50px;
+}
 }

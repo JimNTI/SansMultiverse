@@ -191,22 +191,20 @@ main{
     font-family: 'Undertale';
 }
 
-#tobyfox img{
-    padding-bottom: 20px;
 
-}
 .text-container{
     margin: 20px;
-    padding: 10px;
+    padding: 30px 10%;
     background-color: black;
     outline: 2px solid white;
     height: 190px;
     overflow-y: scroll;
     scrollbar-width: none;
+    text-align: justify;
 }
 p{
     font-size: 12px;
-    line-height: 1.5;
+    line-height: 2;
 }
 #undertale{
     display: flex;
@@ -256,7 +254,7 @@ p{
     }
     #tobyfox{
         flex-direction: row;
-        margin:0px
+        
     }
     #tobyfox img{
         width: 15vw;
@@ -264,6 +262,7 @@ p{
 
     .text-container{
         height: 250px;
+        padding: 30px 5%;
     }
     #undertale img{
         width: 60vw;
