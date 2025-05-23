@@ -1,7 +1,6 @@
 body{
     display: grid;
     height: auto;
-    grid-row: auto auto auto;
     grid-template-areas:
     'hd'
     'mn'
