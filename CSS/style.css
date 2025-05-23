@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: 'Undertale';
@@ -11,7 +12,6 @@
     to {background-color: yellow;}
 }
 body {
-    background-color: black;
     background: linear-gradient( rgb(0, 0, 0, 0.9), rgba(8, 8, 172, 0.8),rgb(0, 0, 0, 0.9));
     margin: 0;
     color: white;
@@ -25,12 +25,13 @@ a{
 header {
     grid-area: hd;
     display: flex;
-    display: column;
+    width: 100%;
 }
 #navbar {
     display: flex;
     flex-direction:row;
     justify-content: space-between;
+    flex-wrap: wrap;
     position: fixed;
     background-color: black;
     background: linear-gradient( rgb(0, 0, 0, 1), rgba(8, 8, 172, 1),rgb(0, 0, 0, 1));
@@ -128,7 +129,8 @@ footer{
     grid-area: ft;
     flex-direction: column;
     background: rgb(66, 66, 69);
-    height: 500px;
+    height: auto;
+    padding-bottom: 50px;
 }
 
 .logo-foot{

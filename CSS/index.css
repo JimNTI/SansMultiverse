@@ -7,7 +7,6 @@
     'toby'
     'under'
     'ft';
-    width: 100%;
 }
 .container.fade {
     opacity: 0;
@@ -96,9 +95,7 @@ main{
 #news-desktop{
     display:none;
 }
-.news-box img{
-    width: 300px;
-}
+
 .details-container{
     display: flex;
     flex-direction: row;
@@ -116,9 +113,16 @@ main{
 }
 
 .news-box{
+    background-color: black;
     margin: 10px;
     display: flex;
     flex-direction: column;
+}
+.news-box:hover{
+    box-shadow: 0 0 10px 3px aqua;
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+    color: orange;
+    transition: 0.5s;
 }
 .news-box img{
     background-color: white;
@@ -126,25 +130,34 @@ main{
 #top-10{
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     background-color: rgb(39, 37, 37);
     flex-direction: column;
     background: linear-gradient( rgb(0, 0, 0, 0.9), rgba(8, 8, 172, 0.8),rgb(0, 0, 0, 0.9));
+    padding-bottom: 40px;
+}
+#top-10 .row{
+    overflow-x: scroll;
+    display: flex;
+    width: 380px;
 }
 .top-10-box{
     display: flex;
     margin: 5px;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    border: solid 1px white;
 }
-.top-10-box{
-    width: 100%;
+
+.top-10-box:hover{
+    color: orange;
+    transition: 0.5s;
 }
 .top-10-box img{
     background-color: white;
     margin-bottom: 10px;
-    width: 100%;
+    width: 120px;
 }
 .top-10-box .details-container{
     align-items: center;
@@ -190,7 +203,12 @@ main{
     transition: 0.5s;
     color: orange;
     text-shadow: 0 0 20px black;
-    font-size: 100%;
+    font-size: 20px;
+      text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
 }
 .category-box:hover img{
     filter: brightness(100%);
@@ -271,6 +289,21 @@ p{
     #news-desktop img{
         width: 25vw;
     } 
+    #top-10 .row{
+        width: 1000px;
+        scrollbar-width: ;
+    }
+
+    .top-10-box img{
+        width: 200px;
+    }
+    .top-10-box h4{
+    font-size: 4rem;
+    }
+    .top-10-box h5{
+    font-size: 2rem;
+    margin-right: 10%;
+    }
     .top-10-box p{
         font-size: 20px;
     }
