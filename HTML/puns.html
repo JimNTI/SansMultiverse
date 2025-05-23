@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puns - Sans Multiverse</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/puns.css">
+    <script src="/JS/script.js" defer></script>
+</head>
+<body class="container">
+    <!-- Audio Element -->
+    <audio id="blipblip">
+        <source src="/misc/clicksound.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Header Section -->
+    <header>
+        <nav id="navbar">
+            <div class="logo-nav">
+                <a href="/HTML/home.html">
+                    <img src="/misc/logo.png" alt="Sans Multiverse Logo">
+                </a>
+            </div>
+            
+            <!-- Mobile Teleport Button -->
+            <div id="teleport-container">
+                <div class="teleport-button">
+                    <img src="/misc/teleport.png" alt="Teleport Menu">
+                </div>
+                <div class="teleportMenu">
+                    <div class="column">
+                        <div class="teleportBox"><a href="home.html">Home</a></div>
+                        <a href="new-popular.html">New & Popular</a>
+                        <a href="games.html">Games</a>
+                        <a href="music.html">Music</a>
+                    </div>
+                    <div class="column">
+                        <a href="people.html">People</a>
+                        <a href="puns.html">Puns</a>
+                        <a href="store.html">Store</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="new-popular.html">New & Popular</a></li>
+                <li>
+                    <div class="categories-button">Categories</div>    
+                    <div class="categoriesMenu">
+                        <div class="categories-box"><a href="games.html">Games</a></div>
+                        <div class="categories-box"><a href="music.html">Music</a></div>
+                        <div class="categories-box"><a href="people.html">People</a></div>
+                        <div class="categories-box"><a href="puns.html">Puns</a></div>
+                    </div>
+                </li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+            <!-- Search Button -->
+            <div id="search-container">
+                <div id="search-box">
+                    <img src="/misc/search-button.png" alt="Search">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Pun-derful Times</h1>
+            <p>A collection of the best Undertale/Deltarune puns and jokes</p>
+        </section>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Featured Puns Section -->
+        <section id="featured-puns">
+            <h2 class="centered-title">Featured Puns</h2>
+            <div class="puns-container">
+                <div class="pun-card">
+                    <div class="pun-text">
+                        <p>Why did Sans cross the road?</p>
+                        <p class="punchline">To get to the other... side...</p>
+                    </div>
+                    <div class="pun-meta">
+                        <span class="pun-author">- Sans</span>
+                        <span class="pun-likes">❤️ 1,234</span>
+                    </div>
+                </div>
+
+                <div class="pun-card">
+                    <div class="pun-text">
+                        <p>What do you call a skeleton who won't work?</p>
+                        <p class="punchline">Lazy bones!</p>
+                    </div>
+                    <div class="pun-meta">
+                        <span class="pun-author">- Papyrus</span>
+                        <span class="pun-likes">❤️ 987</span>
+                    </div>
+                </div>
+
+                <div class="pun-card">
+                    <div class="pun-text">
+                        <p>Why was the skeleton bad at lying?</p>
+                        <p class="punchline">You could see right through him!</p>
+                    </div>
+                    <div class="pun-meta">
+                        <span class="pun-author">- Toriel</span>
+                        <span class="pun-likes">❤️ 756</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Puns Categories -->
+        <section id="puns-categories">
+            <h2 class="centered-title">Pun Categories</h2>
+            <div class="categories-grid">
+                <a href="/puns/sans-puns.html" class="category-card">
+                    <img src="/misc/sans-puns.png" alt="Sans Puns">
+                    <h3>Sans Puns</h3>
+                </a>
+                <a href="/puns/papyrus-puns.html" class="category-card">
+                    <img src="/misc/papyrus-puns.png" alt="Papyrus Puns">
+                    <h3>Papyrus Puns</h3>
+                </a>
+                <a href="/puns/undyne-puns.html" class="category-card">
+                    <img src="/misc/undyne-puns.png" alt="Undyne Puns">
+                    <h3>Undyne Puns</h3>
+                </a>
+                <a href="/puns/toriel-puns.html" class="category-card">
+                    <img src="/misc/toriel-puns.png" alt="Toriel Puns">
+                    <h3>Toriel Puns</h3>
+                </a>
+            </div>
+        </section>
+
+        <!-- Submit Pun Section -->
+        <section id="submit-pun">
+            <h2 class="centered-title">Submit Your Pun</h2>
+            <form class="pun-form">
+                <div class="form-group">
+                    <label for="pun-text">Your Pun:</label>
+                    <textarea id="pun-text" name="pun-text" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="character">Character:</label>
+                    <select id="character" name="character">
+                        <option value="sans">Sans</option>
+                        <option value="papyrus">Papyrus</option>
+                        <option value="undyne">Undyne</option>
+                        <option value="toriel">Toriel</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-button">Submit Pun</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo-foot">
+            <img src="/misc/logo-footer.png" alt="Sans Multiverse Logo">
+        </div>
+        <div id="footer-links">
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contribute.html">CONTRIBUTE</a></li>
+                <li><a href="terms-service.html">TERMS OF SERVICE</a></li>
+            </ul>
+            <ul>
+                <li><a href="store.html">OUR STORE</a></li>
+                <li><a href="post.html">POST</a></li>
+                <li><a href="ideas.html">SUGGEST</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
