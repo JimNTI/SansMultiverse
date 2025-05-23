@@ -7,9 +7,6 @@
     'mn'
     'ft';
 }
-*{
-    outline: 5px solid red;
-}
 header{
     grid-area: hd;
 }

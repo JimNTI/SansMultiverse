@@ -19,7 +19,6 @@ main{
 .product{
     padding: 20px 0;
     display: flex;
-    width: 80vw;
     flex-direction: column;
     background-color: black;
 }
@@ -29,7 +28,6 @@ main{
     gap: 10px;
     padding: 10px;
     outline: solid white 2px;
-
 }
 .product-image{
     align-items: center;
@@ -57,14 +55,4 @@ h1{
 .keystone-info{
  font-style: italic;
  width: 70%;
-}
-
-@media screen and (min-width: 600px){
-main{
-    align-items: baseline;
-}
-.product{
-    width: 40vw;
-    padding-left: 50px;
-}
 }

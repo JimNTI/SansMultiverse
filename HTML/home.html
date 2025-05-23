@@ -8,181 +8,321 @@
     <link rel="stylesheet" href="/CSS/home.css">
     <script src="/JS/script.js" defer></script>
 </head>
-<body class="container"> <!-- Style black purple style or white blue-->
-    <audio id="blipblip"><source src="/misc/clicksound.mp3" type="audio/mpeg"></audio>
-    <header>
-        <!-- Phone navbar including logo "teleport" button and search icon-->
-        <!-- Desktop navbar including logo, 5 links (categories opening a folder of other links) and a search bar-->
-    <nav id="navbar">
-        <div class="logo-nav"><a href="home.html"><img src="/misc/logo.png" alt="logo"></a></div>
-        <div id="teleport-container"><div class="teleport-button"><img src="/misc/teleport.png" alt="teleport.png"></div><div class="teleportMenu">
-            <div class="column">
-            <div class="teleportBox"><a href="home.html">Home</a></div>
-            <a href="new-popular.html">New & Popular (WIP)</a>
-            <a href="games.html">Games (WIP)</a>
-            <a href="music.html">Music (WIP)</a>
-            </div><div class="column">
-            <a href="people.html">People (WIP)</a>
-            <a href="puns.html">Puns (WIP)</a>
-            <a href="store.html">Store (WIP)</a>
-            <a href="contact.html">Contact Us (WIP)</a>
-            </div>
-            </div>
-    </div> <!--button made in photoshop-->
-        <ul id="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="new-popular.html">New & Popular</a></li>
-            <li><div class=categories-button>Categories</div>    
-                <div class="categoriesMenu">
-                <div class="categories-box"><a href="games.html">Games</a></div>
-                <div class="categories-box"><a href="music.html">Music</a></div>
-                <div class="categories-box"><a href="people.html">People</a></div>
-                <div class="categories-box"><a href="puns.html">Puns</a></div>
-                </div>
-            </li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <!-- search icon that opens searchbar (eventually included "search results") + darkended background, search icon is made in photoshop-->
-        <div id="search-container"><div id="search-box"><img src="/misc/search-button.png" alt="search"></div></div>
-    </nav>
+<body class="container">
+    <!-- Audio Element -->
+    <audio id="blipblip">
+        <source src="/misc/clicksound.mp3" type="audio/mpeg">
+    </audio>
 
-    <!-- Desktop hero image and title done with photoshop-->
-    <section id="hero">
-        <h1>Sans Multiverse</h1><p>Explore Sans Multiverse, shop, music, games and find your Inner Sans</p><a id="explore-button" href="explore.html"><h3>Explore Now</h3></a></section>
+    <!-- Header Section -->
+    <header>
+        <nav id="navbar">
+            <div class="logo-nav">
+                <a href="home.html">
+                    <img src="/misc/logo.png" alt="Sans Multiverse Logo">
+                </a>
+            </div>
+            
+            <!-- Mobile Teleport Button -->
+            <div id="teleport-container">
+                <div class="teleport-button">
+                    <img src="/misc/teleport.png" alt="Teleport Menu">
+                </div>
+                <div class="teleportMenu">
+                    <div class="column">
+                        <div class="teleportBox"><a href="home.html">Home</a></div>
+                        <a href="new-popular.html">New & Popular</a>
+                        <a href="games.html">Games</a>
+                        <a href="music.html">Music</a>
+                    </div>
+                    <div class="column">
+                        <a href="people.html">People</a>
+                        <a href="puns.html">Puns</a>
+                        <a href="store.html">Store</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul id="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="new-popular.html">New & Popular</a></li>
+                <li>
+                    <div class="categories-button">Categories</div>    
+                    <div class="categoriesMenu">
+                        <div class="categories-box"><a href="games.html">Games</a></div>
+                        <div class="categories-box"><a href="music.html">Music</a></div>
+                        <div class="categories-box"><a href="people.html">People</a></div>
+                        <div class="categories-box"><a href="puns.html">Puns</a></div>
+                    </div>
+                </li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+            <!-- Search Button -->
+            <div id="search-container">
+                <div id="search-box">
+                    <img src="/misc/search-button.png" alt="Search">
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Sans Multiverse</h1>
+            <p>Explore Sans Multiverse, shop, music, games and find your Inner Sans</p>
+            <a id="explore-button" href="explore.html">
+                <h3>Explore Now</h3>
+            </a>
+        </section>
     </header>
 
-
-        <!-- Big button when hovered gives off an animation and clicked moves you to #explore, button made in photoshop -->
-
-        <main>
-        <!-- Phone news includes 6 buttons that are links with subject and date beneath and added "see all" button right to title -->
-        <!-- Desktop includes 3 button with interactive (clicked) horizontal scroll-->
+    <!-- Main Content -->
+    <main>
+        <!-- News Section -->
         <section id="news-info">
-            <h2 class="centered-title">UnderNews</h2> <!-- centered title "UnderNews"-->
+            <h2 class="centered-title">UnderNews</h2>
             <div id="news-container">
-
-                <div id="news-mobile"> <!--Hidden container when desktop screen-->
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 2000-03-20</h5></div></div></a>
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 1972-02-20</h5></div></div></a>
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 1000-01-10</h5></div></div></a>
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 2000-03-20</h5></div></div></a>
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 1972-02-20</h5></div></div></a>
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 1000-01-10</h5></div></div></a>
+                <!-- Mobile News -->
+                <div id="news-mobile">
+                    <a href="/Sans/HTML/underswap.html">
+                        <div class="row">
+                        <div class="news-box">
+                            <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                            <div class="details-container">
+                                <h4>Latest Release: Blueberry</h4>
+                                <h5>Date: 2000-03-20</h5>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                            <div class="details-container">
+                                <h4>Latest Release: Blueberry</h4>
+                                <h5>Date: 2000-03-20</h5>
+                            </div>
+                        </div>
+                        <div class="news-box">
+                            <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                            <div class="details-container">
+                                <h4>Latest Release: Blueberry</h4>
+                                <h5>Date: 2000-03-20</h5>
+                            </div>
+                            </div>
+                                                    <div class="news-box">
+                            <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                            <div class="details-container">
+                                <h4>Latest Release: Blueberry</h4>
+                                <h5>Date: 2000-03-20</h5>
+                            </div>
+                            </div>
+                                                    <div class="news-box">
+                            <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                            <div class="details-container">
+                                <h4>Latest Release: Blueberry</h4>
+                                <h5>Date: 2000-03-20</h5>
+                            </div>
+                            </div>
+                            <div class="news-box">
+                            <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                            <div class="details-container">
+                                <h4>Latest Release: Blueberry</h4>
+                                <h5>Date: 2000-03-20</h5>
+                            </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Additional news items... -->
                 </div>
+                
+                <!-- Desktop News -->
                 <div id="news-desktop">
                     <div class="row">
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: year-month-day</h5></div></div></a>
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Server Update: New UI</h4><h5>Date: 2025-05-23</h5></div></div></a>
-                    <a href="/Sans/HTML/classic.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Updated Lore: Classic Sans</h4><h5>Date: 2024-01-27</h5></div></div></a>
+                        
+                        <a href="/Sans/HTML/underswap.html">
+                            <div class="news-box">
+                                <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                                <div class="details-container">
+                                    <h4>Latest Release: Blueberry</h4>
+                                    <h5>Date: year-month-day</h5>
+                                </div>
+                            </div>
+                        </a>
+                            <a href="/Sans/HTML/underswap.html">
+                            <div class="news-box">
+                                <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                                <div class="details-container">
+                                    <h4>Latest Release: Blueberry</h4>
+                                    <h5>Date: year-month-day</h5>
+                                </div>
+                            </div>
+                        </a>
+                            <a href="/Sans/HTML/underswap.html">
+                            <div class="news-box">
+                                <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                                <div class="details-container">
+                                    <h4>Latest Release: Blueberry</h4>
+                                    <h5>Date: year-month-day</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Additional news items... -->
                     </div>
                     <div class="row">
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 2000-03-20</h5></div></div></a>
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 1972-02-20</h5></div></div></a>
-                    <a href="/Sans/HTML/underswap.html"><div class="news-box"><img src="/Sans/images/BlueberrySans.png" alt="Blueberry-Sans"><div class="details-container"> <h4>Latest Release: Blueberry</h4><h5>Date: 1000-01-10</h5></div></div></a>
+                        
+                        <a href="/Sans/HTML/underswap.html">
+                            <div class="news-box">
+                                <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                                <div class="details-container">
+                                    <h4>Latest Release: Blueberry</h4>
+                                    <h5>Date: year-month-day</h5>
+                                </div>
+                            </div>
+                        </a>
+                            <a href="/Sans/HTML/underswap.html">
+                            <div class="news-box">
+                                <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                                <div class="details-container">
+                                    <h4>Latest Release: Blueberry</h4>
+                                    <h5>Date: year-month-day</h5>
+                                </div>
+                            </div>
+                        </a>
+                            <a href="/Sans/HTML/underswap.html">
+                            <div class="news-box">
+                                <img src="/Sans/images/BlueberrySans.png" alt="Blueberry Sans">
+                                <div class="details-container">
+                                    <h4>Latest Release: Blueberry</h4>
+                                    <h5>Date: year-month-day</h5>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- Additional news items... -->
                     </div>
                 </div>
-
             </div>
         </section>
 
+        <!-- Top 10 Section -->
+        <aside id="top-10">
+            <h2 class="centered-title">Top 10 (weekly)</h2>
+            <div class="row">
+                <a href="/Sans/HTML/classic.html">
+                    <div class="top-10-box">
+                        <img src="/misc/BlueberrySans.png" alt="Classic Sans">
+                        <div class="details-container">
+                            <h4>1</h4>
+                            <h5>Classic Sans</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="/Sans/HTML/fell-sans.html">
+                    <div class="top-10-box">
+                        <img src="/misc/BlueberrySans.png" alt="Classic Sans">
+                        <div class="details-container">
+                            <h4>1</h4>
+                            <h5>Fell Sans</h5>
+                        </div>
+                    </div>
+                </a>
+                <a href="/Sans/HTML/underswap.html">
+                    <div class="top-10-box">
+                        <img src="/misc/BlueberrySans.png" alt="Classic Sans">
+                        <div class="details-container">
+                            <h4>1</h4>
+                            <h5>Blueberry Sans</h5>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- Additional top 10 items... -->
+            </div>
+        </aside>
 
-    <!--Aside including top 10 "Most liked sanses" >> title above with horizontal scroll beneath, boxes include clickable image with text under, example text: ("1. Classic Sans")-->
-    <aside id="top-10">
-        <h2 class="centered-title">Top 10 (weekly)</h2> <!-- centered title "Top 10 (weekly)"-->
-        <div class="row">
-        <a href="/Sans/HTML/classic.html"><div class="top-10-box"><img src="/misc/BlueberrySans.png" alt="Classic Sans"><div class="details-container"><h4>1.</h4><h5>Classic Sans</h5></div></div></a>
-        <a href="/Sans/HTML/underfell.html"><div class="top-10-box"><img src="/misc/BlueberrySans.png" alt="Fell Sans"><div class="details-container"><h4>2.</h4><h5>Fell Sans</h5></div></div></a>
-        <a href="/Sans/HTML/underswap.html"><div class="top-10-box"><img src="/misc/BlueberrySans.png" alt="Blueberry Sans"><div class="details-container"><h4>1.</h4><h5>Blueberry Sans</h5></div></div></a>
-        </div>
-    </aside>
-    
-    <!--Aside including categories (photoshopped)-->
-    <aside id="categories">
-        <div class="row">
-        <a href="games.html">
-        <div class="category-box"><img src="/misc/Games.png" alt="Games"><h3>Games</h3></div></a>
-        <a href="music.html">
-        <div class="category-box"><img src="/misc/Music.png" alt="Music"><h3>Music</h3></div></a>
-        </div>
-        <div class="row">
-        <a href="people.html">
-        <div class="category-box"><img src="/misc/People.png" alt="People"><h3>People</h3></div></a>
-        <a href="puns.html">
-        <div class="category-box"><img src="/misc/Puns.png" alt="Puns"><h3>Puns</h3></div></a>
-        </div>
-    </aside>
-</main>
+        <!-- Categories Section -->
+        <aside id="categories">
+            <div class="row">
+                <a href="games.html">
+                    <div class="category-box">
+                        <img src="/misc/Games.png" alt="Games">
+                        <h3>Games</h3>
+                    </div>
+                </a>
+                                <a href="games.html">
+                    <div class="category-box">
+                        <img src="/misc/Games.png" alt="Games">
+                        <h3>Games</h3>
+                    </div>
+                </a>
+                                <a href="games.html">
+                    <div class="category-box">
+                        <img src="/misc/Games.png" alt="Games">
+                        <h3>Games</h3>
+                    </div>
+                </a>
+                                <a href="games.html">
+                    <div class="category-box">
+                        <img src="/misc/Games.png" alt="Games">
+                        <h3>Games</h3>
+                    </div>
+                </a>
+                <!-- Additional categories... -->
+            </div>
+        </aside>
+    </main>
 
-    <!--Phone article about tobyfox (img of him above and text under)-->
-    <!--Desktop img to the left and text to the right-->
+    <!-- Toby Fox Article -->
     <article id="tobyfox">
         <div class="Linked-together">
-        <img src="/misc/TobyFox.png" alt="TobyFox">
+            <img src="/misc/TobyFox.png" alt="Toby Fox">
         </div>
         <div class="text-container">
-        <h2>TOBY FOX</h2>
+            <h2>TOBY FOX</h2>
+            <hr class="centered-line">
+            <p>Toby Fox is the creator of Undertale, a critically acclaimed indie role-playing game released in 2015. Known for its unique battle system, emotional storytelling, and quirky humor, Undertale quickly became a cult classic. Fox developed nearly every aspect of the game himself — writing the script, composing the music, and programming the mechanics.
 
-        <hr class="centered-line"><p>Toby Fox is the creator of Undertale, an indie RPG that became a massive cultural phenomenon. He developed the game almost entirely by himself, handling programming, writing, and composing its iconic soundtrack. Released in 2015, Undertale stood out for its unique combat system, where players could choose non-violent solutions, and its deeply emotional storytelling that changes based on player choices.
+Before Undertale, Toby gained attention in the EarthBound fan community for his ROM hacks and music compositions. His deep appreciation for narrative-driven RPGs and unconventional gameplay mechanics heavily influenced Undertale’s design.
 
-            His impact on the Undertale community is huge. The game inspired countless... Toby Fox is the creator of Undertale, an indie RPG that became a massive cultural phenomenon. He developed the game almost entirely by himself, handling programming, writing, and composing its iconic soundtrack. Released in 2015, Undertale stood out for its unique combat system, where players could choose non-violent solutions, and its deeply emotional storytelling that changes based on player choices.
+Following the success of Undertale, Fox began working on Deltarune, a follow-up project that shares a similar aesthetic and tone, though it exists in a separate universe. As of now, chapters of Deltarune have been released for free, with more planned in the future.
 
-            His impact on the Undertale community is huge. The game inspired countless... Toby Fox is the creator of Undertale, an indie RPG that became a massive cultural phenomenon. He developed the game almost entirely by himself, handling programming, writing, and composing its iconic soundtrack. Released in 2015, Undertale stood out for its unique combat system, where players could choose non-violent solutions, and its deeply emotional storytelling that changes based on player choices.
-
-            His impact on the Undertale community is huge. The game inspired countless... Toby Fox is the creator of Undertale, an indie RPG that became a massive cultural phenomenon. He developed the game almost entirely by himself, handling programming, writing, and composing its iconic soundtrack. Released in 2015, Undertale stood out for its unique combat system, where players could choose non-violent solutions, and its deeply emotional storytelling that changes based on player choices.
-
-            His impact on the Undertale community is huge. The game inspired countless... Toby Fox is the creator of Undertale, an indie RPG that became a massive cultural phenomenon. He developed the game almost entirely by himself, handling programming, writing, and composing its iconic soundtrack. Released in 2015, Undertale stood out for its unique combat system, where players could choose non-violent solutions, and its deeply emotional storytelling that changes based on player choices.
-
-            His impact on the Undertale community is huge. The game inspired countless... Toby Fox is the creator of Undertale, an indie RPG that became a massive cultural phenomenon. He developed the game almost entirely by himself, handling programming, writing, and composing its iconic soundtrack. Released in 2015, Undertale stood out for its unique combat system, where players could choose non-violent solutions, and its deeply emotional storytelling that changes based on player choices.
-
-            His impact on the Undertale community is huge. The game inspired countless... 
-        </p>
-            </div>
-        </article>
-
-    <!--Article includes undertale game img and text under-->
-    <article id="undertale">
-        <img src="/misc/UnderTale.png" alt="Undertale Image">
-        <div class="text-container"><h2>The lore behind the beloved game, Undertale</h2>
-            <hr class="centered-line"><p>Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
-
-            The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.
-            Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
-
-            The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.
-            Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
-
-            The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.
-            Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
-
-            The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
-
-            The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.
-            Undertale is a 2015 indie RPG created by Toby Fox, known for its unique combat system, deep storytelling, and memorable characters. Unlike traditional RPGs, players can befriend enemies instead of fighting them, leading to different outcomes based on their choices.
-
-            The game follows a child who falls into the Underground, a world filled with monsters. Players can choose a Pacifist, Neutral, or Genocide route, each changing the story and how characters react. Undertale is praised for its emotional depth, humor, and unforgettable soundtrack, featuring songs like Megalovania.</p>
-            </div>
+Toby Fox is celebrated not just for his creative independence, but also for the emotional resonance and player choice dynamics he brings to his games, making him one of the most respected figures in indie game development today.</p>
+        </div>
     </article>
 
-    <!--phone footer includes one icon on top and links beneath-->
-    <!--desktop footer includes one icon to the left and links  to the right-->
+    <!-- Undertale Article -->
+    <article id="undertale">
+        <img src="/misc/UnderTale.png" alt="Undertale">
+        <div class="text-container">
+            <h2>The lore behind the beloved game, Undertale</h2>
+            <hr class="centered-line">
+            <p>Undertale is a 2015 indie RPG created by Toby Fox, known for its inventive gameplay, charming pixel art, and deeply emotional storytelling. Unlike traditional RPGs, Undertale allows players to complete the game without killing a single enemy — introducing a "Mercy" system that encourages empathy, understanding, and creative problem-solving.
+
+The game takes place in the Underground, a whimsical and often haunting world inhabited by monsters. Players control a human child who has fallen into this realm and must navigate their way back to the surface. Along the way, they encounter a memorable cast of characters, including the skeletal brothers Sans and Papyrus, the shy scientist Alphys, and the heroic fish warrior Undyne.
+
+What sets Undertale apart is its player-choice-driven narrative. Every decision — from sparing a monster to making a friend — has consequences that ripple throughout the story, leading to multiple endings and unique interactions. Its dynamic soundtrack, also composed by Fox, reinforces the emotional weight and personality of each moment.
+
+Upon release, Undertale received widespread acclaim for its originality and subversion of genre norms. It has since inspired a dedicated fanbase, countless pieces of fan art and music, and discussions about morality and player agency in video games.</p>
+        </div>
+    </article>
+
+    <!-- Footer -->
     <footer>
-        <div class="logo-foot"><img src="/misc/logo-footer.png" alt="logo">
+        <div class="logo-foot">
+            <img src="/misc/logo-footer.png" alt="Sans Multiverse Logo">
         </div>
         <div id="footer-links">
-        <ul>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="contribute.html">CONTRIBUTE</a></li>
-            <li><a href="terms-service.html">TERMS OF SERVICE</a></li>
-        </ul>
-        <ul>
-            <li><a href="store.html">OUR STORE</a></li>
-            <li><a href="post.html">POST</a></li>
-            <li><a href="ideas.html">SUGGEST</a></li>
-        </ul>
+            <ul>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="contribute.html">CONTRIBUTE</a></li>
+                <li><a href="terms-service.html">TERMS OF SERVICE</a></li>
+            </ul>
+            <ul>
+                <li><a href="store.html">OUR STORE</a></li>
+                <li><a href="post.html">POST</a></li>
+                <li><a href="ideas.html">SUGGEST</a></li>
+            </ul>
         </div>
     </footer>
-
-
 </body>
 </html>

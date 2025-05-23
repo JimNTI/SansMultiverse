@@ -231,7 +231,7 @@ h2{
     }
     footer{
         flex-direction: row;
-        height: 20vw;
+        height: 500px;
         align-items: center;
     }
     .logo-foot{
