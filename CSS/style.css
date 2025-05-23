@@ -64,6 +64,7 @@ header {
     animation-iteration-count: 5;
 }
 .teleportMenu{
+    display: flex;
     visibility: none;
     opacity: 0;
     width: 90vw;
