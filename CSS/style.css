@@ -65,7 +65,7 @@ header {
 }
 .teleportMenu{
     display: flex;
-    visibility: none;
+    visibility: hidden;
     opacity: 0;
     width: 90vw;
     height: 30vh;
@@ -97,6 +97,7 @@ header {
 .teleportMenu.visible{
     opacity: 1;
     display: flex;
+    visibility: visible;
     transition: 0.5s;
     transform: translateY(20vh);
 }
@@ -221,7 +222,7 @@ h2{
         justify-content: center;
         color: rgb(255, 255, 255);
         font-family: 'Undertale';
-        background-color: gray;
+        background: linear-gradient( rgb(0, 0, 0, 1), rgba(8, 8, 172, 1),rgb(0, 0, 0, 1));
         outline: solid black 2px;
     }
 
